@@ -1,0 +1,121 @@
+body {
+    background: #f7fafc;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 480px;
+    background: #fff;
+    margin: 48px auto;
+    padding: 2em 2.5em;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.09);
+}
+h2, h3 {
+    text-align: center;
+    margin: 0.5em 0 1em 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+input, textarea, button {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #dde3ed;
+    border-radius: 6px;
+    font-size: 1em;
+}
+button {
+    background: #0171fe;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.18s;
+}
+button:hover {
+    background: #005edb;
+}
+hr {
+    border: none;
+    border-top: 1px solid #dfe5ea;
+    margin: 2em 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ticket-section {
+    margin-top: 1em;
+}
+.my-tickets ul {
+    list-style: none;
+    padding-left: 0;
+}
+.ticket-item {
+    background: #f9fcff;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 6px;
+    border: 1px solid #ecf1f7;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.03);
+}
+.ticket-title {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.ticket-status {
+    display: inline-block;
+    font-size: 0.86em;
+    padding: 0.25em 0.7em;
+    margin-left: 0.5em;
+    border-radius: 14px;
+    color: #fff;
+}
+.status-open { background: #0171fe; }
+.status-inprogress { background: #ffa914; }
+.status-closed { background: #17bc79; }
+.ticket-desc {
+    margin: 0.4em 0;
+    font-size: 0.98em;
+    color: #5d6570;
+}
+.ticket-actions {
+    margin-top: 0.6em;
+}
+.reply-section {
+    margin-top: 0.6em;
+    border-top: 1px solid #dae6f5;
+    padding-top: 0.5em;
+}
+.replies {
+    margin-top: 0.4em;
+    font-size: 0.95em;
+}
+.reply-msg {
+    background: #e8f4ff;
+    padding: 0.45em 0.7em;
+    border-radius: 4px;
+    margin-bottom: 0.3em;
+}
+.hidden {
+    display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 8px 0.5em;
+        padding: 1.2em 0.8em;
+    }
+    .header h2 {
+        font-size: 1.1em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
